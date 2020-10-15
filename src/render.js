@@ -60,3 +60,13 @@ class Froggger{
 }
 
 const frogger = new Froggger()
+
+//utilities
+function animate(){
+    ctx3.clearRect(0, 0, canvas.width, canvas.height)
+    frogger.draw()
+
+    requestAnimationFrame(animate);
+}
+
+animate()

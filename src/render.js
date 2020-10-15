@@ -23,3 +23,17 @@ const canvas5 = document.getElementById('canvas-5')
 const ctx5 = canvas5.getContext('2d')
 canvas5.width = 600;
 canvas5.height = 600;
+
+//global variables
+const grid = 80
+let keys = []
+let score = 0;
+let collisiunsCount = 0;
+let frame = 0
+let gameSpeed = 1;
+
+const particlesArray = [];
+const maxParticles = 300;
+const ripplesArray = []
+const carsArray = []
+const logsArray = []

@@ -91,6 +91,9 @@ class Froggger{
                 this.moving = true;
             }
         }
+
+        //scored
+        if(this.y < 0) scored()
     }
 }
 
@@ -105,6 +108,13 @@ function animate(){
 }
 
 animate()
+
+function scored(){
+    score++;
+    gameSpeed += 0.05;
+    frogger.x = canvas.width/2 - frogger.width/2;
+    frogger.y = canvas.height - frogger.height - 40;
+}
 
 //Keys listenners
 window.addEventListener('keydown', (e) => {

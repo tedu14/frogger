@@ -59,7 +59,7 @@ class Froggger{
     }
 
     jump(){
-        alert('hi')
+        
     }
 
     update(){
@@ -94,4 +94,10 @@ window.addEventListener('keydown', (e) => {
     if(keys['ArrowUp'] || keys['ArrowDown'] || keys['ArrowLeft'] || keys['ArrowRight']){
         frogger.jump()
     }
+})
+
+window.addEventListener('keyup', (e) => {
+    delete keys[e.key]
+
+    frogger.moving = false;
 })

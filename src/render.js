@@ -65,8 +65,19 @@ const frogger = new Froggger()
 function animate(){
     ctx3.clearRect(0, 0, canvas.width, canvas.height)
     frogger.draw()
-
+    frogger.update()
     requestAnimationFrame(animate);
 }
 
 animate()
+
+//Keys listenners
+window.addEventListener('keydown', (e) => {
+    keys = []
+
+    keys[e.key] = true;
+
+    if(keys['ArrowUp'] || keys['ArrowDown'] || keys['ArrowLeft'] || keys['ArrowRight']){
+        frogger.jump()
+    }
+})

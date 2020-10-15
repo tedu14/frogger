@@ -70,6 +70,13 @@ class Froggger{
                 this.moving = true;
             }
         }
+        //down
+        if(keys['ArrowDown']){
+            if(this.y < canvas.height - this.height * 2 && this.moving === false){
+                this.y += grid;
+                this.moving = true;
+            }
+        }
     }
 }
 

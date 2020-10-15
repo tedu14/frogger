@@ -77,6 +77,13 @@ class Froggger{
                 this.moving = true;
             }
         }
+        //Left
+        if(keys['ArrowLeft']){
+            if(this.moving === false && this.x > this.width){
+                this.x -= grid;
+                this.moving = true;
+            }
+        }
     }
 }
 

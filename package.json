@@ -1,0 +1,8 @@
+{
+  "name": "frogger",
+  "version": "1.0.0",
+  "description": "a simple game make in javascript",
+  "main": "index.js",
+  "author": "thalison.eduardo14@gmail.com<tedu14>",
+  "license": "MIT"
+}

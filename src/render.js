@@ -57,6 +57,20 @@ class Froggger{
         ctx3.fillStyle = 'green';
         ctx3.fillRect(this.x, this.y, this.width, this.height);
     }
+
+    jump(){
+        alert('hi')
+    }
+
+    update(){
+        //moving up
+        if(keys['ArrowUp']){
+            if(this.moving === false){
+                this.y -= grid;
+                this.moving = true;
+            }
+        }
+    }
 }
 
 const frogger = new Froggger()

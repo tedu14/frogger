@@ -3,7 +3,7 @@ const path = require('path')
 
 const createWin = () => {
     const win = new BrowserWindow({
-        width: 600,
+        width: 800,
         height: 650,
         autoHideMenuBar: true,
         webPreferences: {
